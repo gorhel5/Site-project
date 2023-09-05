@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook</title>
+    <link rel="stylesheet" href="css/textbook.css">
+    <script src="js/textbook.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#498fa3">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="preload">
+    <header>
+        <div class="header">
+            <div class="head-wrap">
+                <div class="logo">
+                    <a class="logo-text" href="index.html">GlobalTalk</a>
+                </div>
+                <div class="little-line"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Textbook</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li>
+                            <div class="submenu">
+                                <a class="games-button" href="#">Games</a>
+
+                                <div class="submenu-content">
+                                    <a href="#">Sprint ➔</a>
+                                    <a href="#">Audio-call ➔</a>
+                                </div>   
+                            </div>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+            <div class="reg-buttons">
+                <button class="login-button" onclick="document.location='logIn.html'">Log In ➔</button>
+                <button class="signup-button" onclick="document.location='signUp.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="top-panel">
+                <div class="top-panel__button">
+                    <div class="textbook-button top-panel_anim-block">
+                        <svg class="svg active" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6.66667 23.6667V18.6454L12.08 22.1827C13.2456 22.9442 14.6077 23.3498 16 23.3498C17.3923 23.3498 18.7544 22.9442 19.92 22.1827L25.3333 18.6454V23.6667C25.3333 23.8831 25.2632 24.0936 25.1333 24.2667L25.132 24.268L25.1307 24.2707L25.1267 24.276L25.1147 24.2893L25.0987 24.3107L25.0813 24.3333L24.9667 24.468C24.8321 24.6207 24.6911 24.7675 24.544 24.908C24.1747 25.264 23.624 25.7267 22.8773 26.1853C21.3827 27.1053 19.1187 28 16 28C12.8813 28 10.6187 27.1067 9.12133 26.1853C8.52218 25.8202 7.96349 25.3925 7.45467 24.9093C7.25281 24.7146 7.0627 24.508 6.88533 24.2907L6.87333 24.2773L6.86933 24.2707V24.268C6.73872 24.0947 6.66763 23.8837 6.66667 23.6667ZM29.5467 13.504L18.8267 20.508C17.9862 21.0573 17.004 21.3498 16 21.3498C14.996 21.3498 14.0138 21.0573 13.1733 20.508L4 14.5147V21.6667C4 21.9319 3.89464 22.1863 3.70711 22.3738C3.51957 22.5613 3.26522 22.6667 3 22.6667C2.73478 22.6667 2.48043 22.5613 2.29289 22.3738C2.10536 22.1863 2 21.9319 2 21.6667V13.3333C2 13.216 2.02 13.104 2.05733 13C1.98224 12.7875 1.98116 12.5558 2.05425 12.3426C2.12734 12.1294 2.27032 11.9471 2.46 11.8253L13.212 4.93202C14.0441 4.3987 15.0117 4.11523 16 4.11523C16.9883 4.11523 17.9559 4.3987 18.788 4.93202L29.54 11.8253C29.6804 11.9155 29.7961 12.0394 29.8764 12.1857C29.9566 12.3319 29.9991 12.496 29.9997 12.6629C30.0004 12.8297 29.9593 12.9941 29.8801 13.141C29.801 13.288 29.6864 13.4127 29.5467 13.504Z"/>
+                        </svg>
+                        <a class="btn active" href="#">TextBook</a>
+                    </div>
+                    <div class="little-line"></div>
+                    <div class="dictionary-button top-panel_anim-block">
+                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12.64 4.62498C10.3819 3.54686 7.22563 3.01873 3 2.99998C2.60148 2.99457 2.21078 3.11078 1.88 3.33311C1.6085 3.51663 1.38624 3.76405 1.2328 4.05362C1.07935 4.34319 0.999407 4.66602 1 4.99373V22.875C1 24.0837 1.86 24.9956 3 24.9956C7.44188 24.9956 11.8975 25.4106 14.5663 27.9331C14.6028 27.9678 14.6486 27.9909 14.6982 27.9998C14.7478 28.0086 14.7988 28.0026 14.8451 27.9826C14.8913 27.9626 14.9306 27.9295 14.9581 27.8874C14.9857 27.8453 15.0002 27.796 15 27.7456V6.67623C15.0001 6.53408 14.9697 6.39356 14.9108 6.26417C14.852 6.13478 14.766 6.01954 14.6588 5.92623C14.0474 5.40363 13.3684 4.96593 12.64 4.62498ZM30.12 3.33123C29.7891 3.10946 29.3983 2.9939 29 2.99998C24.7744 3.01873 21.6181 3.54436 19.36 4.62498C18.6316 4.96531 17.9524 5.40215 17.3406 5.92373C17.2336 6.0172 17.1479 6.13249 17.0891 6.26186C17.0304 6.39122 17 6.53166 17 6.67373V27.7444C17 27.7927 17.0142 27.84 17.041 27.8804C17.0677 27.9207 17.1058 27.9522 17.1504 27.9709C17.195 27.9897 17.2441 27.9949 17.2916 27.9858C17.3392 27.9767 17.3829 27.9538 17.4175 27.92C19.0219 26.3262 21.8375 24.9937 29.0025 24.9944C29.5329 24.9944 30.0416 24.7836 30.4167 24.4086C30.7918 24.0335 31.0025 23.5248 31.0025 22.9944V4.99436C31.0032 4.666 30.9231 4.34251 30.7692 4.05246C30.6153 3.7624 30.3923 3.5147 30.12 3.33123Z"/>
+                        </svg>
+                        <a class="btn" href="#">Dictionary</a>
+                    </div>
+                </div>
+                <div class="top-panel__gamesbtns">
+                    <div class="sprint-button top-panel_anim-block">
+                        <img src="img/sprint-little.svg" alt="">
+                        <a href="#">Sprint</a>
+                    </div>
+                    <div class="audiocall-button top-panel_anim-block">
+                        <img src="img/audiocall-little.svg" alt="">
+                        <a href="#">Audio-Call</a>
+                    </div>
+                    <div class="settings-button top-panel_anim-block">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="settings-back" width="40" height="40" rx="4" fill="#F6F5F4"/>
+                            <path class="settings-img" d="M25.449 26.2857L26.124 25.6152C29.247 25.7172 29.295 25.6077 29.4322 25.2867L30.2902 23.198L30.354 23L30.2842 22.8267C30.2475 22.7352 30.1342 22.4622 28.1842 20.603V19.625C30.4342 17.4575 30.3862 17.3465 30.258 17.0292L29.4037 14.9187C29.2755 14.6022 29.2267 14.4785 26.1262 14.5632L25.4512 13.8657C25.5209 12.8383 25.4855 11.8065 25.3455 10.7862L25.2585 10.589L23.028 9.61398C22.6995 9.46398 22.584 9.40998 20.478 11.7035L19.5315 11.6892C17.3632 9.37473 17.2605 9.41673 16.9357 9.54798L14.862 10.3865C14.5372 10.5177 14.4225 10.5642 14.5485 13.7142L13.8787 14.3817C10.7572 14.2797 10.7092 14.3907 10.5735 14.7102L9.71398 16.7997L9.64648 17L9.71698 17.174C9.75373 17.264 9.86248 17.534 11.817 19.3955V20.3705C9.56698 22.538 9.61573 22.649 9.74473 22.967L10.5982 25.0797C10.7287 25.403 10.7752 25.5177 13.875 25.4367L14.55 26.138C14.48 27.1638 14.5144 28.1941 14.6527 29.213L14.7397 29.4117L16.9845 30.3927C17.3107 30.5292 17.424 30.578 19.524 28.2927L20.4705 28.3047C22.6417 30.6222 22.7527 30.5772 23.07 30.449L25.1392 29.6127C25.4662 29.483 25.5802 29.4372 25.449 26.2857ZM16.5555 21.3927C16.2938 20.7088 16.2399 19.9628 16.4006 19.2483C16.5613 18.5338 16.9294 17.8827 17.4588 17.3767C17.9882 16.8707 18.6552 16.5323 19.3762 16.4039C20.0972 16.2756 20.84 16.363 21.5115 16.6553C22.1829 16.9476 22.7531 17.4316 23.1505 18.0468C23.5479 18.6619 23.7548 19.3807 23.7452 20.1129C23.7355 20.8452 23.5099 21.5583 23.0965 22.1628C22.6831 22.7673 22.1004 23.2362 21.4215 23.5107C20.4952 23.873 19.4631 23.8535 18.5511 23.4565C17.6392 23.0596 16.9216 22.3175 16.5555 21.3927Z" fill="#BABABA"/>
+                        </svg>
+                    </div>
+                    <div class="settings-block">
+                        <input class="settings-checkbox" name="display" id="display" type="checkbox" onchange="isChecked()"  checked>
+                        <label class="settings-label" for="display">Display the 'Add' and 'Remove' buttons</label>
+                    </div>
+                </div>
+            </div>
+            <div class="level-panel">
+                <div class="level-panel_anim-block level-panel_levels a active ">
+                    <a class="level-panel_a--text active" href="#">A1</a>
+                    <div class="level-panel_a--block level-panel_block easy active">Easy</div>
+                </div>
+                <div class="level-panel_anim-block level-panel_levels a">
+                    <a class="level-panel_a--text" href="#">A2</a>
+                    <div class="level-panel_a--block level-panel_block easy">Easy</div>
+                </div>
+                <div class="level-panel_anim-block level-panel_levels b">
+                    <a class="level-panel_b--text" href="#">B1</a>
+                    <div class="level-panel_b--block level-panel_block medium">Medium</div>
+                </div>
+                <div class="level-panel_anim-block level-panel_levels b">
+                    <a class="level-panel_b--text" href="#">B2</a>
+                    <div class="level-panel_b--block level-panel_block medium">Medium</div>
+                </div>
+                <div class="level-panel_anim-block level-panel_levels c">
+                    <a class="level-panel_c--text" href="#">C1</a>
+                    <div class="level-panel_c--block level-panel_block hard">Hard</div>
+                </div>
+                <div class="level-panel_anim-block level-panel_levels c">
+                    <a class="level-panel_c--text" href="#">C2</a>
+                    <div class="level-panel_c--block level-panel_block hard">Hard</div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="first-card_block card-block card_anim-block">
+                    <div class="first-card_image">
+                        <img class="cards-image" src="img/first-card.svg" alt="">
+                    </div>
+                    <div class="first-card_main cards-main">
+                        <div class="first-card_first--el">
+                            <div class="first-text">
+                                <p>remark / <span>note</span></p>
+                                <div class="player-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19.184 3.6192C19.1558 3.44999 19.0917 3.2888 18.9959 3.14648C18.9001 3.00416 18.7749 2.88403 18.6288 2.79419C18.4827 2.70435 18.319 2.64688 18.1488 2.62567C17.9785 2.60445 17.8057 2.61998 17.642 2.6712L9.24201 5.2956C8.99776 5.37185 8.78428 5.52418 8.63273 5.73035C8.48118 5.93651 8.3995 6.18573 8.39961 6.4416V16.2C7.85897 15.7945 7.19725 15.5835 6.52167 15.601C5.84609 15.6186 5.19622 15.8637 4.67737 16.2967C4.15852 16.7298 3.80107 17.3253 3.66294 17.9868C3.52482 18.6484 3.6141 19.3372 3.91633 19.9416C4.21856 20.5461 4.71603 21.0308 5.32814 21.3172C5.94025 21.6037 6.63114 21.675 7.28887 21.5197C7.9466 21.3645 8.53264 20.9917 8.95203 20.4618C9.37143 19.9318 9.59961 19.2758 9.59961 18.6V10.0416L17.9996 7.416V10.8276C18.4112 10.8636 18.8132 10.9392 19.1996 11.0484V3.816C19.1996 3.7488 19.1936 3.684 19.184 3.6192ZM22.7996 17.4C22.7996 18.8322 22.2307 20.2057 21.218 21.2184C20.2053 22.2311 18.8318 22.8 17.3996 22.8C15.9674 22.8 14.5939 22.2311 13.5812 21.2184C12.5685 20.2057 11.9996 18.8322 11.9996 17.4C11.9996 15.9678 12.5685 14.5943 13.5812 13.5816C14.5939 12.5689 15.9674 12 17.3996 12C18.8318 12 20.2053 12.5689 21.218 13.5816C22.2307 14.5943 22.7996 15.9678 22.7996 17.4ZM20.084 16.878L16.4912 14.898C16.3999 14.8475 16.297 14.8217 16.1927 14.8231C16.0884 14.8245 15.9862 14.8531 15.8963 14.906C15.8064 14.959 15.7319 15.0345 15.6801 15.125C15.6282 15.2156 15.6009 15.3181 15.6008 15.4224V19.3824C15.6007 19.4868 15.6279 19.5895 15.6796 19.6802C15.7314 19.7709 15.8059 19.8466 15.8958 19.8997C15.9857 19.9527 16.088 19.9814 16.1924 19.9829C16.2968 19.9844 16.3998 19.9585 16.4912 19.908L20.084 17.928C20.1778 17.8761 20.256 17.8001 20.3104 17.7077C20.3648 17.6154 20.3935 17.5102 20.3935 17.403C20.3935 17.2958 20.3648 17.1906 20.3104 17.0983C20.256 17.0059 20.1778 16.9299 20.084 16.878Z" fill="#BABABA"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="transcription">
+                                <p>[rimɑ́ːrk]</p>
+                                <div class="info-block-f"></div>
+                            </div>
+
+
+                            <div class="first-card_second--el">
+                                <div class="second-text">
+                                    <p>To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="third-text">
+                                    <p>The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                                </div>
+                            </div>
+
+                            <div class="first-card_third--el">
+                                <button class="add-to-learned-f add-to-learned add-button"></button>
+                                <button class="add-to-dictionary-f add-to-dictionary add-button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-card_block card-block card_anim-block">
+                    <div class="first-card_image">
+                        <img class="cards-image" src="img/second-card.svg" alt="">
+                    </div>
+                    <div class="first-card_main cards-main">
+                        <div class="first-card_first--el">
+                            <div class="first-text">
+                                <p>awful / <span>terrible</span></p>
+                                <div class="player-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19.184 3.6192C19.1558 3.44999 19.0917 3.2888 18.9959 3.14648C18.9001 3.00416 18.7749 2.88403 18.6288 2.79419C18.4827 2.70435 18.319 2.64688 18.1488 2.62567C17.9785 2.60445 17.8057 2.61998 17.642 2.6712L9.24201 5.2956C8.99776 5.37185 8.78428 5.52418 8.63273 5.73035C8.48118 5.93651 8.3995 6.18573 8.39961 6.4416V16.2C7.85897 15.7945 7.19725 15.5835 6.52167 15.601C5.84609 15.6186 5.19622 15.8637 4.67737 16.2967C4.15852 16.7298 3.80107 17.3253 3.66294 17.9868C3.52482 18.6484 3.6141 19.3372 3.91633 19.9416C4.21856 20.5461 4.71603 21.0308 5.32814 21.3172C5.94025 21.6037 6.63114 21.675 7.28887 21.5197C7.9466 21.3645 8.53264 20.9917 8.95203 20.4618C9.37143 19.9318 9.59961 19.2758 9.59961 18.6V10.0416L17.9996 7.416V10.8276C18.4112 10.8636 18.8132 10.9392 19.1996 11.0484V3.816C19.1996 3.7488 19.1936 3.684 19.184 3.6192ZM22.7996 17.4C22.7996 18.8322 22.2307 20.2057 21.218 21.2184C20.2053 22.2311 18.8318 22.8 17.3996 22.8C15.9674 22.8 14.5939 22.2311 13.5812 21.2184C12.5685 20.2057 11.9996 18.8322 11.9996 17.4C11.9996 15.9678 12.5685 14.5943 13.5812 13.5816C14.5939 12.5689 15.9674 12 17.3996 12C18.8318 12 20.2053 12.5689 21.218 13.5816C22.2307 14.5943 22.7996 15.9678 22.7996 17.4ZM20.084 16.878L16.4912 14.898C16.3999 14.8475 16.297 14.8217 16.1927 14.8231C16.0884 14.8245 15.9862 14.8531 15.8963 14.906C15.8064 14.959 15.7319 15.0345 15.6801 15.125C15.6282 15.2156 15.6009 15.3181 15.6008 15.4224V19.3824C15.6007 19.4868 15.6279 19.5895 15.6796 19.6802C15.7314 19.7709 15.8059 19.8466 15.8958 19.8997C15.9857 19.9527 16.088 19.9814 16.1924 19.9829C16.2968 19.9844 16.3998 19.9585 16.4912 19.908L20.084 17.928C20.1778 17.8761 20.256 17.8001 20.3104 17.7077C20.3648 17.6154 20.3935 17.5102 20.3935 17.403C20.3935 17.2958 20.3648 17.1906 20.3104 17.0983C20.256 17.0059 20.1778 16.9299 20.084 16.878Z" fill="#BABABA"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="transcription">
+                                <p>[ɔ́ːfəl]</p>
+                                <div class="info-block-s"></div>
+                            </div>
+
+
+                            <div class="first-card_second--el">
+                                <div class="second-text">
+                                    <p>To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="third-text">
+                                    <p>The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                                </div>
+                            </div>
+
+                            <div class="first-card_third--el">
+                                <button class="add-to-learned-s add-to-learned add-button"></button>
+                                <button class="add-to-dictionary-s add-to-dictionary add-button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-card_block card-block card_anim-block">
+                    <div class="first-card_image">
+                        <img class="cards-image" src="img/third-card.svg" alt="">
+                    </div>
+                    <div class="first-card_main cards-main">
+                        <div class="first-card_first--el">
+                            <div class="first-text">
+                                <p>remark / <span>note</span></p>
+                                <div class="player-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19.184 3.6192C19.1558 3.44999 19.0917 3.2888 18.9959 3.14648C18.9001 3.00416 18.7749 2.88403 18.6288 2.79419C18.4827 2.70435 18.319 2.64688 18.1488 2.62567C17.9785 2.60445 17.8057 2.61998 17.642 2.6712L9.24201 5.2956C8.99776 5.37185 8.78428 5.52418 8.63273 5.73035C8.48118 5.93651 8.3995 6.18573 8.39961 6.4416V16.2C7.85897 15.7945 7.19725 15.5835 6.52167 15.601C5.84609 15.6186 5.19622 15.8637 4.67737 16.2967C4.15852 16.7298 3.80107 17.3253 3.66294 17.9868C3.52482 18.6484 3.6141 19.3372 3.91633 19.9416C4.21856 20.5461 4.71603 21.0308 5.32814 21.3172C5.94025 21.6037 6.63114 21.675 7.28887 21.5197C7.9466 21.3645 8.53264 20.9917 8.95203 20.4618C9.37143 19.9318 9.59961 19.2758 9.59961 18.6V10.0416L17.9996 7.416V10.8276C18.4112 10.8636 18.8132 10.9392 19.1996 11.0484V3.816C19.1996 3.7488 19.1936 3.684 19.184 3.6192ZM22.7996 17.4C22.7996 18.8322 22.2307 20.2057 21.218 21.2184C20.2053 22.2311 18.8318 22.8 17.3996 22.8C15.9674 22.8 14.5939 22.2311 13.5812 21.2184C12.5685 20.2057 11.9996 18.8322 11.9996 17.4C11.9996 15.9678 12.5685 14.5943 13.5812 13.5816C14.5939 12.5689 15.9674 12 17.3996 12C18.8318 12 20.2053 12.5689 21.218 13.5816C22.2307 14.5943 22.7996 15.9678 22.7996 17.4ZM20.084 16.878L16.4912 14.898C16.3999 14.8475 16.297 14.8217 16.1927 14.8231C16.0884 14.8245 15.9862 14.8531 15.8963 14.906C15.8064 14.959 15.7319 15.0345 15.6801 15.125C15.6282 15.2156 15.6009 15.3181 15.6008 15.4224V19.3824C15.6007 19.4868 15.6279 19.5895 15.6796 19.6802C15.7314 19.7709 15.8059 19.8466 15.8958 19.8997C15.9857 19.9527 16.088 19.9814 16.1924 19.9829C16.2968 19.9844 16.3998 19.9585 16.4912 19.908L20.084 17.928C20.1778 17.8761 20.256 17.8001 20.3104 17.7077C20.3648 17.6154 20.3935 17.5102 20.3935 17.403C20.3935 17.2958 20.3648 17.1906 20.3104 17.0983C20.256 17.0059 20.1778 16.9299 20.084 16.878Z" fill="#BABABA"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="transcription">
+                                <p>[rimɑ́ːrk]</p>
+                                <div class="info-block-t"></div>
+                            </div>
+
+
+                            <div class="first-card_second--el">
+                                <div class="second-text">
+                                    <p>To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="third-text">
+                                    <p>The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                                </div>
+                            </div>
+
+                            <div class="first-card_third--el">
+                                <button class="add-to-learned-t add-to-learned add-button"></button>
+                                <button class="add-to-dictionary-t add-to-dictionary add-button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dictionary-block">
+                <div class="dictionary-block_image">
+                    <img src="img/dictionary-img.svg" alt="">
+                </div>
+                <div class="dictionary-block_main">
+                    <div class="dictionary-block_main--text">
+                        <h1>No words in this section yet</h1>
+                        <p>To save difficult words for further study, go to the textbook and select 'add to dictionary'</p>
+                    </div>
+                    <div class="dictionary-block_main--buttons">
+                        <button onclick="document.location='textbook.html'">To Textbook</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-first__block">
+                <div>
+                    <ul class="footer-first__block--list">
+                        <li><a href="textbook.html">Textbook</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="statistics.html">Statistic</a></li>
+                        <li><a href="sprint.html">Sprint</a></li>
+                        <li><a href="audio-call.html">Audio-call</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-first__block--list">
+                        <li><a href="about.html">Alex</a></li>
+                        <li><a href="about.html">Gabriel</a></li>
+                        <li><a href="about.html">Marcus</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-second__block"></div>
+            <div class="footer-third__block">
+                <div class="footer-third__block--images">
+                    <div>
+                        <a href="https://github.com">
+                            <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2615 15.7617C12.2615 16.8432 11.6981 18.613 10.3646 18.613C9.031 18.613 8.4676 16.8432 8.4676 15.7617C8.4676 14.6801 9.031 12.9104 10.3646 12.9104C11.6981 12.9104 12.2615 14.6801 12.2615 15.7617ZM27.4527 13.1484C27.4527 14.7992 27.2873 16.5483 26.5482 18.0645C24.5892 22.0284 19.2033 21.9352 15.3473 21.9352C11.4293 21.9352 5.72295 22.0749 3.68644 18.0645C2.93179 16.5638 2.64233 14.7992 2.64233 13.1484C2.64233 10.9802 3.3608 8.93093 4.7874 7.26982C4.51862 6.4522 4.3894 5.59318 4.3894 4.74452C4.3894 3.63193 4.64267 3.07305 5.14405 2.06396C7.48552 2.06396 8.98448 2.5297 10.7677 3.9269C12.2667 3.56983 13.807 3.40941 15.3525 3.40941C16.7481 3.40941 18.154 3.55948 19.5082 3.8855C21.2656 2.50382 22.7646 2.06396 25.0802 2.06396C25.5868 3.07305 25.8349 3.63193 25.8349 4.74452C25.8349 5.59318 25.7005 6.43668 25.4369 7.23877C26.8583 8.91541 27.4527 10.9802 27.4527 13.1484ZM24.1291 15.7617C24.1291 13.4899 22.7491 11.4873 20.3301 11.4873C19.3531 11.4873 18.4176 11.6632 17.4355 11.7978C16.6654 11.9168 15.8952 11.9634 15.1044 11.9634C14.3187 11.9634 13.5486 11.9168 12.7732 11.7978C11.8067 11.6632 10.8608 11.4873 9.87869 11.4873C7.45968 11.4873 6.0796 13.4899 6.0796 15.7617C6.0796 20.3052 10.2353 21.0038 13.8535 21.0038H16.3449C19.9786 21.0038 24.1291 20.3103 24.1291 15.7617ZM19.8597 12.9104C18.5261 12.9104 17.9627 14.6801 17.9627 15.7617C17.9627 16.8432 18.5261 18.613 19.8597 18.613C21.1933 18.613 21.7567 16.8432 21.7567 15.7617C21.7567 14.6801 21.1933 12.9104 19.8597 12.9104Z" fill="#BABABA"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.75588 13.4868H16.6924V21.1817H13.4211L13.0308 17.8918C12.6591 19.069 11.9962 19.9426 11.042 20.5126C10.0879 21.0825 8.92316 21.3675 7.54774 21.3675C6.29623 21.3675 5.18103 21.0887 4.20213 20.5311C3.23562 19.9735 2.47356 19.1743 1.91596 18.1335C1.37075 17.0926 1.09814 15.8783 1.09814 14.4905C1.09814 12.2724 1.76107 10.5191 3.08692 9.23041C4.41278 7.94173 6.47591 7.29739 9.27631 7.29739C10.8748 7.29739 12.2812 7.5576 13.4955 8.07803C14.7222 8.59846 15.7631 9.40388 16.6181 10.4943C16.0605 10.7793 14.97 11.3493 13.3468 12.2043L12.8821 12.4645C12.3989 11.9812 11.8351 11.6219 11.1907 11.3865C10.5464 11.1386 9.86489 11.0147 9.1462 11.0147C7.95665 11.0147 7.07068 11.3307 6.4883 11.9627C5.90591 12.5822 5.61472 13.3505 5.61472 14.2674C5.61472 15.2587 5.9245 16.0579 6.54406 16.6651C7.17601 17.2723 8.13632 17.5758 9.425 17.5758C9.9826 17.5758 10.5216 17.4953 11.042 17.3342C11.5749 17.1731 12.0209 16.8943 12.3803 16.4978H8.75588V13.4868Z" fill="#BABABA"/>
+                                <path d="M28.9968 6.53627C27.0514 6.47432 25.1618 6.43714 23.3279 6.42475V16.127H18.6812V6.42475C16.8349 6.43714 14.9515 6.47432 13.0308 6.53627V2.63306H28.9968V6.53627Z" fill="#BABABA"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtube.com">
+                            <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7748 3.68454C25.873 3.99832 26.6575 4.78277 26.9713 5.88101C27.5988 7.92058 27.5988 11.9997 27.5988 11.9997C27.5988 11.9997 27.5988 16.0789 27.1282 18.1185C26.8144 19.2167 26.0299 20.0011 24.9317 20.3149C22.8921 20.7856 15.0476 20.7856 15.0476 20.7856C15.0476 20.7856 7.04616 20.7856 5.16347 20.3149C4.06524 20.0011 3.28079 19.2167 2.96701 18.1185C2.49634 16.0789 2.49634 11.9997 2.49634 11.9997C2.49634 11.9997 2.49633 7.92058 2.81011 5.88101C3.12389 4.78277 3.90836 3.99832 5.00659 3.68454C7.04617 3.21387 14.8907 3.21387 14.8907 3.21387C14.8907 3.21387 22.8921 3.21387 24.7748 3.68454ZM12.5373 8.92363C12.5373 8.6165 12.8691 8.42396 13.1358 8.57633L18.519 11.6524C18.7877 11.806 18.7877 12.1935 18.519 12.347L13.1358 15.4231C12.8691 15.5755 12.5373 15.383 12.5373 15.0758V8.92363Z" fill="#BABABA"/>
+                            </svg> 
+                        </a>
+                       
+                    </div>
+                </div>
+                <div class="footer-third__block--info">
+                    <p>©2021 GlobalTalk. Project for <a class="info-globaltalk" href=""><u>GlobalTalk.</u></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

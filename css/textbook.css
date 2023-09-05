@@ -1,0 +1,662 @@
+@import 'fonts.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'reset.css';
+
+
+
+ /* ---------------- MAIN CONTENT ---------------- */
+
+
+
+ .main-content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    background-color: var(--grey-light);
+}
+
+.top-panel {
+    background-color: white;
+    padding: 10px;
+
+    width: 1180px;
+    border-radius: 14px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-panel__button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.textbook-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.textbook-button:hover a {
+    color: black;
+    transition: 1s;
+}
+
+.textbook-button:hover svg path {
+    fill: black;
+    transition: 1s;
+}
+
+.btn {
+    color: var(--grey-dark);
+    font-size: 1.2rem;
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+}
+
+
+.dictionary-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dictionary-button:hover a {
+    color: black;
+    transition: 1s;
+}
+
+
+.dictionary-button:hover svg path {
+    fill: black;
+    transition: 1s;
+}
+
+.btn a {
+    color: var(--grey-dark);
+    font-size: 1.2rem;
+    font-family: 'Dela Gothic One';
+    font-weight: 400; 
+}
+
+.top-panel__gamesbtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sprint-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--pink-light);
+    width: 146px;
+    height: 44px;
+    border-radius: 14px;
+
+}
+
+.sprint-button:hover {
+    cursor: pointer;
+}
+
+.audiocall-button:hover {
+    cursor: pointer
+}
+
+.settings-button:hover {
+    cursor: pointer;
+}
+
+.sprint-button a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: var(--pink-dark);
+}
+
+.audiocall-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cyan-light);
+    width: 178px;
+    height: 44px;
+    border-radius: 14px;
+}
+
+.audiocall-button a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: var(--cyan-dark);
+}
+
+.active {
+    color: black;
+}
+
+.svg {
+    fill: #BABABA;
+}
+
+.svg.active {
+    fill: black
+}
+
+.settings-back.sett-active {
+    fill: var(--cyan-dark);
+    transition: 1s;
+}
+
+.settings-img.sett-active {
+    fill: white;
+    transition: 1s;
+}
+
+.settings-block {
+    position: absolute;
+
+    display: flex;
+    gap: 10px;
+
+    opacity: 0;
+    padding: 1.25rem;
+    visibility: hidden;
+    align-items: center;
+
+
+    border-radius: 0.875rem;
+    right: 10rem;
+    top: 11.7rem;
+    background-color: white;
+    width: 24rem;
+    transition: 0.6s;
+
+    z-index: 1;
+
+    box-shadow: 0px 11.449064254760742px 11.449064254760742px 0px rgba(52, 41, 39, 0.04), 0px 11.449064254760742px 68.69439697265625px 0px rgba(52, 41, 39, 0.04), 0px 68.69439697265625px 68.69439697265625px 0px rgba(52, 41, 39, 0.04), 0px 91.59251403808594px 91.59251403808594px 0px rgba(52, 41, 39, 0.04), 0px 183.18502807617188px 183.18502807617188px 0px rgba(52, 41, 39, 0.12), 0px 343.4719543457031px 343.4719543457031px 0px rgba(52, 41, 39, 0.08);
+}
+
+.settings-block.active {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+    z-index: 1;
+}
+
+
+input[type = checkbox] {
+    accent-color: var(--cyan-dark);
+    width: 15px;
+    height: 15px;
+}
+
+
+.settings-label {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: var(--grey-dark);
+    font-size: 0.9rem;
+}
+
+.level-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.level-panel a {
+    color: var(--grey-dark);
+    font-size: 1.4rem;
+    font-family: 'Dela Gothic One';
+    font-weight: 400; 
+}
+.level-panel_levels {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.level-panel_block {
+    padding: 4px 8px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.easy {
+    border-radius: 4px;
+    background-color: rgba(99, 155, 109, 0.30);
+    color: var(--green);
+    line-height: 140%
+}
+
+.medium {
+    border-radius: 4px;
+    background-color: rgba(196, 162, 76, 0.30);
+    color: var(--yellow);
+    line-height: 140%
+}
+
+.hard {
+    border-radius: 4px;
+    background-color: rgba(203, 91, 67, 0.30);
+    color: var(--red);
+    line-height: 140%
+}
+
+.level-panel_levels:hover a {
+    color: black;
+    transition: 1s;
+}
+
+.a:hover div {
+    background-color: var(--green);
+    color: white;
+    transition: 1s;
+}
+
+.b:hover div {
+    background-color: var(--yellow);
+    color: white;
+    transition: 1s; 
+}
+
+.c:hover div {
+    background-color: var(--orange);
+    color: white;
+    transition: 1s;
+}
+
+.level-panel_levels::before {
+    content: '';
+	position: absolute;
+	left: 0; bottom: -13px;
+	width: 0%;
+	height: 1.5px;
+    background-color: black;
+    transition: width 0.35s;
+}
+
+.level-panel_levels:hover:before {
+    width: 100%;
+}
+
+.level-panel_levels.active::before {
+    width: 100%;
+}
+
+.level-panel_levels a.active {
+    color: black;
+
+}
+
+.level-panel_a--block.active {
+    background-color: var(--green);
+    color: white;
+    transition: 1s;
+}
+
+.level-panel_b--block.active {
+    background-color: var(--yellow);
+    color: white;
+    transition: 1s; 
+}
+
+.level-panel_c--block.active {
+    background-color: var(--orange);
+    color: white;
+    transition: 1s;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-block {
+    display: flex;
+    border-radius: 14px;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+
+    box-shadow: 0px 22.898128509521484px 45.79625701904297px -11.449064254760742px rgba(52, 41, 39, 0.08);
+}
+
+.cards-image {
+    width: 320px;
+}
+
+.cards-main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.first-card_first--el {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.first-text {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.first-text > p {
+    font-family: 'Dela Gothic One';
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.first-text > p > span {
+    color: var(--grey-dark);
+}
+
+.player-button {
+    display: flex;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-light);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.transcription {
+    display: flex;
+    gap: 10px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    align-items: center;
+}
+
+.transcription p {
+    line-height: 140%;
+    letter-spacing: 0.72px;
+}
+
+.learned {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    background-color: var(--green);
+
+    line-height: 140%;
+    letter-spacing: -0.56px;
+}
+
+.compaund {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    background-color: var(--orange);
+
+    line-height: 140%;
+    letter-spacing: -0.56px;
+
+    /* content: 'compaund'; */
+}
+
+.compaund::before {
+    content: 'compaund';
+}
+
+.learned::before {
+    content: 'learned';
+}
+
+.first-card_second--el {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.second-text {
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+}
+
+.line {
+
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.third-text {
+    width: 500px;
+    color: var(--grey-dark);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+}
+
+.first-card_third--el {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.add-button {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.add-button.active {
+    display: none;
+}
+
+/* --------- ADD TO LEARN --------- */
+
+.add-to-learned {
+    background-color: var(--green);
+}
+
+.add-to-learned::before {
+    content: 'Add to learned';
+}
+
+.add-to-learned:hover {
+    background-color: rgba(99, 155, 109, 0.30);
+    color: var(--green);
+    transition: 1s;
+}
+
+.remove-from-learned {
+    background-color: rgba(99, 155, 109, 0.30);
+    color: var(--green);
+}
+
+.remove-from-learned::before {
+    content: 'Remove from learned';
+}
+
+/* --------- ADD TO DICTIONARY --------- */
+
+.add-to-dictionary {
+    background-color: var(--orange);
+}
+
+.add-to-dictionary::before {
+    content: 'Add to dictionary';
+}
+
+
+.add-to-dictionary:hover {
+    background: rgba(203, 91, 67, 0.30);
+    color: var(--orange);
+    transition: 1s;
+}
+
+.remove-from-dictionary {
+    background: rgba(203, 91, 67, 0.30);
+    color: var(--orange);
+}
+
+.remove-from-dictionary::before {
+    content: 'Remove from dictionary';
+}
+
+.dictionary-block {
+    display: none;
+    visibility: hidden;
+    gap: 30px;
+    padding: 40px;
+
+    width: 800px;
+    border-radius: 14px;
+    background-color: white;
+
+    box-shadow: 0px 22.898128509521484px 45.79625701904297px -11.449064254760742px rgba(52, 41, 39, 0.08);
+}
+
+.dictionary-block_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.dictionary-block_main--text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.dictionary-block_main--text h1 {
+    color: black;
+    font-family: Dela Gothic One;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -1.28px;
+}
+
+.dictionary-block_main--text p {
+    color: var(--grey-dark);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+    line-height: 140%; 
+}
+
+.dictionary-block_main--buttons button {
+    display: flex;
+    padding: 14px 22px;
+    gap: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 100px;
+    background-color: var(--cyan-dark);
+    border: none;
+    cursor: pointer;
+}
+
+.dictionary-block_main--buttons button:hover {
+    background-color: transparent;
+    color: var(--cyan-dark);
+    border: 2px solid var(--cyan-dark);
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* -------- ANIMATIONS -------- */
+
+.top-panel_anim-block {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(-70px);
+
+}
+
+.top-panel-animation {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}
+
+.level-panel_anim-block {
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(100px);
+}
+
+.level-panel-animation {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}
+
+.card_anim-block {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(150px);
+}
+
+.card-animation {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}

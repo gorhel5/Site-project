@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#498fa3">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="js/reg-valid.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="head-wrap">
+                <div class="logo">
+                    <a class="logo-text" href="index.html">GlobalTalk</a>
+                </div>
+                <div class="little-line"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="textbook.html">Textbook</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li>
+                            <div class="submenu">
+                                <a class="games-button" href="#">Games</a>
+
+                                <div class="submenu-content">
+                                    <a href="#">Sprint ➔</a>
+                                    <a href="#">Audio-call ➔</a>
+                                </div>   
+                            </div>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+            <div class="reg-buttons">
+                <button class="login-button" onclick="document.location='logIn.html'">Log In ➔</button>
+                <button class="signup-button" onclick="document.location='signUp.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main main-anim_block">
+            <div class="main-text">
+                <h1>Get Started Now</h1>
+            </div>
+            
+            <form class="form-block" action="">
+                <div class="name">
+                    <p class="form-text">Login</p>
+                    <input required minlength="4" class="input inp-name" type="text" name="name" placeholder="Enter your login">
+                    
+                </div>
+                            
+                <div class="email">
+                    <p class="form-text">Email address</p>
+                    <input required minlength="5" class="input inp-email" type="text" name="email" placeholder="Enter your email">
+                </div>
+            
+                <div class="password">
+                    <p class="form-text">Password</p>
+                    <input class="input inp-password" type="password" name="password" placeholder="Enter your password">
+                </div>
+                
+                <div class="submit-info">
+                    <button type="submit" class="sumbit-info__button">Sign Up</button>
+                    <p class="end-text">Have an account? <a href="/logIn.html"> Sign In</a></p> 
+                </div>
+            </form>
+                
+            
+        </div>
+
+        <div class="aside aside-anim_block">
+            <img src="img/main.svg" alt="">
+        </div>
+    </main>
+</body>
+</html>
