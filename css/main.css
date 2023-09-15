@@ -1,0 +1,707 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* 
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+
+:root {
+    --accent: #2B788B;
+    --accent-light: #C3DCE3;
+    --pink: #945069;
+    --pink-light: #F2D4DC;
+    --text-color: #757575;
+    --page-bg: #F6F5F4;
+}
+
+
+.container {
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 100px;
+    background-color: var(--accent-light);
+    color: var(--accent);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.title-1 {
+    color: black;
+    font-family: 'Dela Gothic One';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2.24px;
+
+    max-width: 530px;
+    margin-bottom: 30px;
+}
+
+.title-2 {
+    color: black;
+    font-family: 'Dela Gothic One';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.92px;
+
+    max-width: 475px;
+    margin-bottom: 30px;
+}
+
+/* HEADER */
+
+.nav-button {
+    display: none;
+}
+
+
+.header {
+    padding: 24px 0;
+    background-color: var(--page-bg);
+    box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.logo {
+    font-family: 'Dela Gothic One';
+    font-size: 21px;
+    color: black;
+}
+
+.line {
+    max-width: 1px;
+    height: 16.865px;
+    background-color: #E0E0E0;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.nav-list__link {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.64px;
+
+    transition: all 0.5s;
+}
+
+.nav-list__link-active {
+    color: black;
+}
+
+.nav-list__link:hover {
+    color: black;
+}
+.login-block {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.login__button {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: all 0.5s;
+}
+
+.login__button:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+.reg__button {
+    padding: 14px 22px;
+    background-color: var(--accent);
+    color: white;
+
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+.reg__button:hover {
+    outline: 3px solid var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+}
+
+/* ABOUT */
+
+.about {
+    padding: 95px 0 54px 0;
+    background-color: var(--page-bg);
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content {
+
+}
+.about__subtitle {
+    color: var(--accent);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.24px;
+    text-transform: uppercase;
+
+    margin-bottom: 24px;
+}
+
+.about__text {
+    max-width: 360px;
+    margin-bottom: 32px;
+    line-height: 140%;
+    letter-spacing: -0.72px;
+}
+.about__button {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.about__info {
+    display: flex;
+    align-items: center;
+    column-gap: 48.7px;
+}
+.about__words {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    max-width: 163px;
+}
+
+.about__words_text {
+    font-family: 'Dela Gothic One';
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    color: black;
+}
+.about__words_text m {
+    color: var(--accent);
+}
+.about__words_subtitle {
+    color: #585858;
+}
+.about__line {
+    max-width: 1px;
+    height: 48.777px;
+    background-color: #E0E0E0;
+}
+.about__games {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    max-width: 100px;
+}
+
+/* GAMES */
+
+.games {
+    padding: 77px 0;
+}
+
+.games-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.games__text {
+    max-width: 370px;
+
+    line-height: 140%;
+    letter-spacing: -0.72px;
+    font-size: 18px;
+    margin-bottom: 63px;
+}
+.games-block {
+    display: flex;
+    column-gap: 20px;
+}
+.sprint {
+    position: relative;
+
+    max-width: 138px;
+    height: 112px;
+    padding: 14px 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 14px;
+
+    background-color: var(--pink-light);
+}
+.sprint__img {
+    position: absolute;
+    bottom: 35%;
+
+}
+.sprint__text {
+    font-weight: 700;
+    color: var(--pink);
+    line-height: 100%;
+
+}
+
+.audiocall {
+    position: relative;
+
+    display: flex;
+    max-width: 172px;
+    height: 112px;
+    padding: 14px 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 14px;
+
+    background-color: var(--accent-light);
+}
+
+.audiocall__img {
+    position: absolute;
+    bottom: 35%;
+
+}
+
+.audiocall__text {
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 100%;
+}
+
+/* VOCABULARY */
+
+.vocabulary {
+    padding-top: 26px;
+    background-color: var(--page-bg);
+}
+
+.vocabulary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vocabulary-content {
+    padding-left: 100px;
+}
+
+.vocabulary__text {
+    margin-bottom: 34px;
+    max-width: 380px;
+    line-height: 140%;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+}
+
+/* PROGRESS */
+
+.progress {
+    padding: 95px 0;
+}
+
+.progress-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress__text {
+    max-width: 396px;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    letter-spacing: -0.72px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 40px 0;
+    background-color: var(--page-bg);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+}
+.footer-list__item {
+}
+.footer-list__link {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 100%;
+}
+.footer-line {
+    height: 1px;
+    background-color: #E0E0E0;
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.social__text {
+    font-size: 12px;
+    line-height: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        margin-bottom: 20px;
+    }
+
+    .about__text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .about__info {
+       column-gap: 40px;
+       justify-content: center;
+
+    }
+
+    .nav-button {
+        display: block;
+        position: absolute;
+    }
+
+    .nav {
+        display: none;
+        visibility: hidden;
+    }
+    .line {
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-content {
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .logo {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+        line-height: 100%;
+
+    }
+    
+    .login__button {
+        display: block;
+        position: absolute;
+        right: 5%;
+        font-size: 14px;
+    }
+
+    .reg__button {
+        display: none;
+        visibility: hidden;
+    }
+
+    .about {
+        padding: 40px 0 20px 0;
+        text-align: center;
+    }
+
+    .about-row {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about__subtitle {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .about__words {
+        max-width: 85px;
+    }
+
+    .about__games {
+        width: 69px;
+    }
+
+    .about__line {
+        width: 1px;
+        height: 32px;
+    }
+    
+    .title-1 {
+        font-size: 32px;
+        letter-spacing: -1.28px;
+        margin-bottom: 12px;
+    
+    }
+    
+    .about__words_image {
+        width: 12.8px;
+    }
+
+    .about__words_text {
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .about__words_subtitle {
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -0.48px;
+    }
+
+
+    .about__games_text {
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .about__games_subtitle {
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -0.48px;
+    }
+
+    .about-img {
+        width: 289px;
+    }
+
+
+    /* Games */
+
+    .title-2 {
+        max-width: 335px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.96px;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 8px;
+    }
+
+    .games {
+        padding: 40px 0;
+        text-align: center;
+    }
+    .games-content {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .games-row {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .games__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 53px;
+    }
+
+    .games-block {
+        justify-content: center;
+    }
+
+    .games-img {
+        width: 335px;
+        margin: 0 auto;
+    }
+
+    /* VOCABULARY */
+
+    .vocabulary {
+        padding-top: 40px;
+    }
+
+    .vocabulary-row {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .vocabulary-content {
+        max-width: 335px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .vocabulary__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 306px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+        margin-bottom: 16px;
+    }
+
+    .vocabulary__btn {
+        margin-bottom: 0px;
+    }
+
+    .vocabulary-img {
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    /* PROGRESS */
+
+    .progress {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .progress-row {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .progress-img {
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    .progress-content {
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    .progress__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+        margin-bottom: 18px;
+    }
+
+    /* FOOTER */
+
+    .footer-content {
+        row-gap: 20px;
+        
+    }
+    
+    .footer-list {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        row-gap: 10px;
+    }
+
+    .footer-menu {
+        padding: 0 20px;
+    }
+
+    .footer-list_mob {
+        width: 117px;
+        height: 124px;
+        /* justify-content: start;
+        align-items: start; */
+        margin-bottom: auto;
+    }
+
+    .footer-list__link {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

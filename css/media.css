@@ -1,0 +1,37 @@
+@media (max-width: 425px) {
+
+    .nav-button {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        visibility: hidden;
+    }
+    .line {
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-content {
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 18px 0;
+    }
+
+    
+    .login__button {
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    .reg__button {
+        display: none;
+        visibility: hidden;
+        
+    }
+
+}
