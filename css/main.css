@@ -30,6 +30,7 @@ font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
 }
 
+
 .btn {
     display: inline-block;
     padding: 14px 22px;
@@ -102,7 +103,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .line {
-    max-width: 1px;
+    width: 1px;
     height: 16.865px;
     background-color: #E0E0E0;
 }
@@ -174,9 +175,6 @@ font-family: 'Ubuntu', sans-serif;
     justify-content: space-between;
 }
 
-.about-content {
-
-}
 .about__subtitle {
     color: var(--accent);
     font-family: 'Montserrat';
@@ -204,6 +202,7 @@ font-family: 'Ubuntu', sans-serif;
     align-items: center;
     column-gap: 48.7px;
 }
+
 .about__words {
     display: flex;
     text-align: center;
@@ -228,7 +227,7 @@ font-family: 'Ubuntu', sans-serif;
     color: #585858;
 }
 .about__line {
-    max-width: 1px;
+    width: 1px;
     height: 48.777px;
     background-color: #E0E0E0;
 }
@@ -414,7 +413,313 @@ font-family: 'Ubuntu', sans-serif;
     line-height: 100%;
 }
 
-@media (max-width: 600px) {
+@media ( max-width: 600px) {
+    .title-1 {
+        max-width: 335px;
+        
+        margin: 0 auto;
+        margin-bottom: 12px;
+
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -1.28px;
+    }
+
+    .title-2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.96px;
+
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.56px;
+
+        margin-bottom: 20px;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 18px 0;
+    }
+
+    .header-content {
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.32px; 
+        
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .reg__button {
+        display: none;
+    }
+
+    .login__button {
+        position: absolute;
+        right: 20px;
+        font-size: 14px;
+    }
+
+    .nav-button {
+        display: block;
+        position: absolute;
+    }
+
+    /* ABOUT */
+
+    .about {
+        padding: 40px 0px 20px 0;
+        text-align: center
+    }
+
+    .about__subtitle {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.68px;
+
+        margin-bottom: 8px;
+    }
+
+    .about-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+
+    .about__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+
+
+    .about__info {
+      column-gap: 40px;
+     
+    }
+
+    .about__words_text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.4px;
+    }
+
+    .about__words_text m {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.4px;
+     }
+
+     .about__words_subtitle {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.48px;
+     }
+
+     .about__words_image {
+        width: 12.8px;
+     }
+
+     .about__words {
+        column-gap: 2px;
+        max-width: 85px;
+        margin-left: auto;
+     }
+
+     .about__games {
+        column-gap: 2px;
+        max-width: 70px;
+        margin-right: auto;
+     }
+
+     .about__line {
+        height: 32px;
+     }
+
+     .about__img {
+        max-width: 335px;
+     }
+
+     /* GAMES */
+
+     .games {
+        padding: 40px 0;
+     }
+
+     .games-row {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        row-gap: 20px;
+     }
+
+     .games-img {
+        max-width: 335px;
+    
+     }
+
+     .games__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+
+        margin: 0 auto;
+        margin-bottom: 53px;
+     }
+
+     .games-block {
+        
+        justify-content: center;
+     }
+
+     .sprint {
+        width: 114px;
+        height: 112px;
+        padding: 14px 22px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.56px;
+     }
+
+     .sprint__img {
+        max-width: 131px;
+     }
+
+     .audiocall {
+        width: 172px;
+        height: 112px;
+        padding: 14px 22px;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.56px;
+     }
+     
+     .audiocall__img {
+        max-width: 91px;
+     }
+
+     /* VOCABULARY */
+
+     .vocabulary {
+        padding-top: 40px;
+     }
+
+     .vocabulary-row {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+        text-align: center;
+     }
+
+     .vocabulary-content {
+        padding: unset;
+     }
+
+     .vocabulary__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+
+        margin-bottom: 16px;
+     }
+
+     .vocabulary__btn {
+        margin: unset;
+     }
+
+     .vocabulary-img {
+        max-width: 335px;
+     }
+
+     /* PROGRESS */
+
+     .progress {
+        padding: 40px 0;
+        text-align: center;
+     }
+
+     .progress-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+     }
+
+     .progress__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.56px;
+
+        margin-bottom: 16px;
+     }
+
+     .progress__btn {
+        margin: unset;
+     }
+
+     /* FOOTER */
+
+     .footer-menu {
+        padding: 0 20px;
+        align-items: unset;
+     }
+     .footer-list {
+        flex-direction: column;
+       
+        align-items: start;
+        justify-content: start;
+        row-gap: 16px;
+        width: 117px;
+     }
+     
+     .footer-social {
+        flex-direction: column;
+        row-gap: 20px;
+
+     }
+
+}
+
+
+/* @media (max-width: 600px) {
 
     .btn {
         padding: 12px 20px;
@@ -544,12 +849,12 @@ font-family: 'Ubuntu', sans-serif;
 
     .about-img {
         width: 289px;
-    }
+    } */
 
 
     /* Games */
 
-    .title-2 {
+    /* .title-2 {
         max-width: 335px;
         font-size: 24px;
         font-weight: 400;
@@ -595,11 +900,11 @@ font-family: 'Ubuntu', sans-serif;
     .games-img {
         width: 335px;
         margin: 0 auto;
-    }
+    } */
 
     /* VOCABULARY */
 
-    .vocabulary {
+    /* .vocabulary {
         padding-top: 40px;
     }
 
@@ -633,11 +938,11 @@ font-family: 'Ubuntu', sans-serif;
     .vocabulary-img {
         max-width: 335px;
         margin: 0 auto;
-    }
+    } */
 
     /* PROGRESS */
 
-    .progress {
+    /* .progress {
         padding: 40px 0;
         text-align: center;
     }
@@ -663,11 +968,11 @@ font-family: 'Ubuntu', sans-serif;
         line-height: 140%;
         letter-spacing: -0.56px;
         margin-bottom: 18px;
-    }
+    } */
 
     /* FOOTER */
 
-    .footer-content {
+    /* .footer-content {
         row-gap: 20px;
         
     }
@@ -686,8 +991,6 @@ font-family: 'Ubuntu', sans-serif;
     .footer-list_mob {
         width: 117px;
         height: 124px;
-        /* justify-content: start;
-        align-items: start; */
         margin-bottom: auto;
     }
 
@@ -704,4 +1007,4 @@ font-family: 'Ubuntu', sans-serif;
         justify-content: center;
     }
 
-}
+} */
