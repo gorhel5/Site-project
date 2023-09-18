@@ -2,7 +2,6 @@ const navList = document.querySelector('.nav-list');
 const header = document.querySelector('.header');
 const gamesBlock = document.querySelector('.games-block');
 const body = document.querySelector('body');
-const navListGamesEl = document.querySelector('.nav-list--games');
 const navListItems = document.querySelectorAll('.nav-list__item');
 const navButton = document.querySelector('.nav-button');
 const navButtonImg = document.querySelector('.nav-button__image');
@@ -53,4 +52,8 @@ navButton.addEventListener('click', () => {
 
         deleteMenuElements();
     }
+});
+
+AOS.init({
+    disable: 'mobile'
 });
