@@ -401,6 +401,7 @@ font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .socials {
     display: flex;
