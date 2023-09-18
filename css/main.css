@@ -454,19 +454,41 @@ font-family: 'Ubuntu', sans-serif;
 
     .header-content {
         margin: 0 auto;
+        column-gap: unset;
+        
     }
 
     .logo {
+        z-index: 9;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
-        letter-spacing: -0.32px; 
+        letter-spacing: -0.32px;
         
     }
 
     .nav-list {
         display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+        position: fixed;
+        margin-top: 52px;
+        inset: 0;
+        background-color: var(--page-bg);
+
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 145px;
+        row-gap: 32px;
+        overflow: hidden;
+        
+    }
+
+    .nav-list.active .nav-list__link-active {
+        color: var(--accent);
     }
 
     .line {
@@ -506,8 +528,9 @@ font-family: 'Ubuntu', sans-serif;
     .about-row {
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 20px;
+        row-gap: 30px;
     }
+
 
 
     .about__text {
@@ -518,6 +541,8 @@ font-family: 'Ubuntu', sans-serif;
 
         margin: 0 auto;
         margin-bottom: 20px;
+        
+
         
     }
 
@@ -653,12 +678,15 @@ font-family: 'Ubuntu', sans-serif;
      }
 
      .vocabulary__text {
+        max-width: 306px;
         font-size: 14px;
         font-weight: 600;
         line-height: 140%;
         letter-spacing: -0.56px;
 
+        margin: 0 auto;
         margin-bottom: 16px;
+        
      }
 
      .vocabulary__btn {

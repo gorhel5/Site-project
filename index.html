@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer ></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -29,7 +29,7 @@
                             <li class="nav-list__item"><a href="#!" class="nav-list__link nav-list__link-active">Home</a></li>
                             <li class="nav-list__item"><a href="#!" class="nav-list__link">Textbook</a></li>
                             <li class="nav-list__item"><a href="#!" class="nav-list__link">Statistics</a></li>
-                            <li class="nav-list__item"><a href="#!" class="nav-list__link">Games</a></li>
+                            <li class="nav-list__item nav-list--games"><a href="#!" class="nav-list__link ">Games</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +38,7 @@
                     <a href="#!" class="reg__button">Sign Up</a>
                 </div>
                 <button class="nav-button">
-                    <img src="./img/icons/Burger.svg" alt="">
+                    <img class="nav-button__image" src="./img/icons/Burger.svg" alt="">
                 </button>
             </div>
         </div>
@@ -52,6 +52,7 @@
                         <p class="about__subtitle">E-COURSE PLATFORM</p>
                         <h1 class="title-1">Learning and teaching online, made easy.</h1>
                         <p class="about__text">Practice your English and learn new things with the platform.</p>
+                        <source media="(max-width: 600px)" content="Practice">
                         <a href="" class="about__button btn">About platform</a>
                         <div class="about__info">
                             <div class="about__words">
@@ -68,7 +69,7 @@
                         </div>
                     </div>
                     <div class="about-img">
-                        <img src="./img/heros/01.png" alt="" class="about__img">
+                        <img src="./img/heroes/01.png" alt="" class="about__img">
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
             <div class="container">
                 <div class="games-row">
                     <div class="games-img">
-                        <img src="./img/heros/02.png" alt="">
+                        <img src="./img/heroes/02.png" alt="">
                     </div>
                     <div class="games-content">
                         <h2 class="title-2">Learn a language in a playful way</h2>
@@ -86,11 +87,11 @@
                         <div class="games-block">
                             <div class="sprint">
                                 <img class="sprint__img" src="./img/games/shoes.svg" alt="">
-                                <p class="sprint__text">Sprint ➔</p>
+                                <a href="" class="sprint__text">Sprint ➔</a>
                             </div>
                             <div class="audiocall">
                                 <img class="audiocall__img" src="./img/games/audiocall.svg" alt="">
-                                <p class="audiocall__text">Audio-call ➔</p>
+                                <a href="" class="audiocall__text">Audio-call ➔</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +108,11 @@
                         <a href="" class="vocabulary__btn btn">Textbook ➔</a>
                     </div>
                     <div class="vocabulary-img">
-                        <img src="./img/heros/03.png" alt="">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="./img/heroes/03-mob.svg">
+                            <img src="./img/heroes/03.png" alt="">
+                        </picture>
+                       
                     </div>
                 </div>
             </div>
@@ -117,12 +122,12 @@
             <div class="container">
                 <div class="progress-row">
                     <div class="progress-img">
-                        <img src="./img/heros/04.png" alt="">
+                        <img src="./img/heroes/04.png" alt="">
                     </div>
                     <div class="progress-content">
                         <h2 class="title-2">Watch your progress every day</h2>
                         <p class="progress__text">Save statistics on your achievements, words learned, and mistakes</p>
-                        <a class="progress__btn btn">Statistics ➔</a>
+                        <a href="" class="progress__btn btn">Statistics ➔</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +136,6 @@
 
     <footer class="footer">
         <div class="container"> 
-            <!-- ttt -->
             <div class="footer-content">
                 <div class="footer-menu">
                     <ul class="footer-list">
