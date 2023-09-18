@@ -387,8 +387,7 @@ font-family: 'Ubuntu', sans-serif;
     align-items: center;
     column-gap: 30px;
 }
-.footer-list__item {
-}
+
 .footer-list__link {
     color: var(--text-color);
     font-size: 14px;
